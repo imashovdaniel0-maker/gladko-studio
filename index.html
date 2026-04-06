@@ -2,20 +2,88 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>GLADKO STUDIO | Тест</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GLADKO | Лазерная эпиляция Бишкек</title>
     <style>
-        body { background-color: #fdfaf7; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; font-family: sans-serif; }
-        .box { text-align: center; padding: 40px; background: white; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
-        h1 { color: #d4a373; letter-spacing: 5px; }
-        p { color: #888; }
+        /* ОСНОВНОЙ ДИЗАЙН */
+        body { font-family: 'Segoe UI', Helvetica, Arial, sans-serif; margin: 0; background-color: #fdfaf7; color: #4a4540; line-height: 1.6; }
+        header { background-color: white; padding: 50px 20px; text-align: center; border-bottom: 1px solid #f0ece8; }
+        h1 { margin: 0; letter-spacing: 7px; font-weight: 300; font-size: 2.8rem; color: #333; }
+        .tagline { text-transform: uppercase; letter-spacing: 2px; font-size: 0.8rem; color: #a1958a; margin-top: 10px; }
+        
+        .container { max-width: 700px; margin: 0 auto; padding: 20px; }
+        
+        /* КНОПКА ЗАПИСИ */
+        .cta-section { text-align: center; padding: 30px 0; }
+        .btn-whatsapp { 
+            background-color: #d4a373; color: white; padding: 18px 35px; 
+            text-decoration: none; border-radius: 50px; font-weight: bold;
+            box-shadow: 0 8px 15px rgba(212, 163, 115, 0.2);
+            transition: 0.3s; display: inline-block;
+            font-size: 0.9rem;
+        }
+        .btn-whatsapp:hover { background-color: #bc8a5f; transform: translateY(-2px); }
+
+        /* ПРАЙС-ЛИСТ */
+        .price-section { background: white; padding: 35px; border-radius: 25px; margin-top: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.02); }
+        h2 { text-align: center; font-weight: 400; border-bottom: 1px solid #f4eee8; padding-bottom: 15px; font-size: 1.4rem; color: #6d5f53; }
+        .price-grid { display: grid; grid-template-columns: 1fr; gap: 12px; margin-top: 20px; margin-bottom: 30px; }
+        .price-item { display: flex; justify-content: space-between; border-bottom: 1px dashed #eee; padding: 10px 0; }
+        .price-item span { font-size: 1rem; }
+        .price-item b { color: #d4a373; font-size: 1.1rem; }
+
+        /* ИНФО-БЛОКИ */
+        .work-time { text-align: center; background: #f4eee8; padding: 12px; border-radius: 12px; margin-bottom: 20px; font-size: 0.85rem; font-weight: bold; letter-spacing: 1px; }
+        .location { text-align: center; margin-top: 30px; font-size: 0.9rem; color: #888; }
+        footer { text-align: center; padding: 50px; color: #ccc; font-size: 0.7rem; letter-spacing: 1px; }
+        
+        /* Адаптация для больших экранов */
+        @media (min-width: 600px) { .price-grid { grid-template-columns: 1fr 1fr; gap: 25px; } }
     </style>
 </head>
 <body>
-    <div class="box">
-        <h1>GLADKO</h1>
-        <p>Сайт успешно запущен!</p>
-        <p>Если ты видишь это сообщение, значит всё работает.</p>
+
+<header>
+    <h1>GLADKO</h1>
+    <div class="tagline">Бережная лазерная эпиляция в Бишкеке</div>
+</header>
+
+<div class="container">
+    <div class="work-time">ЕЖЕДНЕВНО • ЗАПИСЬ 24/7</div>
+
+    <div class="cta-section">
+        <a href="https://wa.me/996504080838?text=Здравствуйте!%20Хочу%20записаться%20в%20Gladko" class="btn-whatsapp">
+            ЗАПИСАТЬСЯ ЧЕРЕЗ WHATSAPP
+        </a>
     </div>
+
+    <section class="price-section">
+        <h2>Выгодные комплексы</h2>
+        <div class="price-grid">
+            <div class="price-item"><span>Комплекс S</span> <b>1300 сом</b></div>
+            <div class="price-item"><span>Комплекс M</span> <b>2100 сом</b></div>
+            <div class="price-item"><span>Комплекс L</span> <b>2700 сом</b></div>
+            <div class="price-item"><span>Комплекс XL</span> <b>3500 сом</b></div>
+        </div>
+
+        <h2>Отдельные зоны</h2>
+        <div class="price-grid">
+            <div class="price-item"><span>Глубокое бикини</span> <b>800 сом</b></div>
+            <div class="price-item"><span>Голени / Бедра</span> <b>900 сом</b></div>
+            <div class="price-item"><span>Ноги полностью</span> <b>1600 сом</b></div>
+            <div class="price-item"><span>Руки (до локтя)</span> <b>600 сом</b></div>
+            <div class="price-item"><span>Подмышки</span> <b>400 сом</b></div>
+            <div class="price-item"><span>Верхняя губа</span> <b>300 сом</b></div>
+        </div>
+    </section>
+
+    <div class="location">
+        📍 Бишкек, студия GLADKO
+    </div>
+</div>
+<footer>
+    &copy; 2026 GLADKO STUDIO • BISHKEK
+</footer>
+
 </body>
 </html>
-
